@@ -1,0 +1,121 @@
+/* variávies */
+:root {
+    --darkColor: #101C27;
+    --accentColor: #68A4DC;
+    --lightColor: #f0f0f0;
+    --detailColor: #DBE7F2;
+    --fakeWhite: #fefefe;
+}
+
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+/* reset */
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--detailColor);
+    border-radius: 2px;
+    margin: 10px 0;
+}
+
+/* estilos básicos */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* mobile */
+body {
+    display: flex;
+}
+
+nav {
+    background-color: var(--darkColor);
+    height: calc(100% - 80px);
+    width: calc(100% - 60px);
+    margin-left: calc(-100% - 20px);
+    color: var(--fakeWhite);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.navOpen {
+    margin-left: 0;
+}
+
+nav header {
+    display: flex;
+    align-items: center;
+    justify-content: space;
+}
+
+nav header aside {
+    margin-left: 20px;
+}
+
+nav header aside h1 {
+    margin: 0 0 8px 0;
+}
+
+nav header aside h2 {
+    font-weight: 100;
+    font-size: 10pt;
+    margin: 0;
+}
+
+.avatar {
+    width: 68px;
+    height: 68px;
+    border-radius: 34px;
+}
+
+nav button {
+    border: none;
+    width: 100%;
+    background-color: var(--accentColor);
+    height: 44px;
+    color: var(--fakeWhite);
+    border-radius: 8px;
+}
+
+#menu {
+    width: 44px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    height: 64px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#mainContent {
+    width: 100%;
+}
+
+/* outros dispositivos */
+@media only screen and (min-width: 800px){
+    nav{
+        width: 40%;
+        margin-left: calc(-40% - 80px);
+    }
+    
+}
